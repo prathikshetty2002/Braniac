@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Brain tumor Detection</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<style>
+		body {
+			background-image: url('https://thumbs.dreamstime.com/b/doctor-medical-background-24834402.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.header {
+			background-color: #F7464A;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+		.form-container {
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.form-control-file {
+			margin-bottom: 20px;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			flex: 1;
+		}
+		.btn-group {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		.btn-submit {
+			background-color: #F7464A;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			flex: 0 0 auto;
+			margin-left: 10px;
+			margin-bottom: 22px;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>Brain tumor Detection</h1>
+	</header>
+	<div class="container form-container">
+		<form method="post" enctype="multipart/form-data">
+			<div class="form-group">
+				<h3><label for="image">Upload MRI image of Brain:</label></h3>
+				<div class="btn-group">
+					<input id="file" class="form-control-file" type="file" class="custom-file-input" name="file" accept=".jpg, .jpeg, .png" required>
+					<button type="submit"  value="Upload" id="submit-btn" class="btn-submit">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</script>
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIH7FpxrM" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
